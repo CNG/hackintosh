@@ -4,19 +4,19 @@
 
 * Fast Boot: **Enabled**
     * SATA Support: **All Devices**
-    * USB Support: **Partial Initialization**
-    * PS/2 Keyboard and Mouse Support: **Auto**
+    * USB Support: **Full Initialization**
+    * PS/2 Keyboard and Mouse Support: **Full Initialization**
     * Network Stack Driver Support: **Disabled**
     * Next Boot after AC Power Loss: **Fast Boot**
 * DirectKey (DRCT): **Enabled**
-* Boot Logo Display: **Auto**
+* Boot Logo Display: **Disabled**
     * POST Report: **5 sec**
 * Boot up NumLock State: **Enabled**
 * Wait For 'F1' If Error: **Enabled**
 * Option ROM Messages: **Enabled**
 * Interrupt 19 Capture: **Disabled**
 * Above 4G Decoding: **Enabled**
-* Setup Mode: **EZ Mode**
+* Setup Mode: **Advanced Mode**
 * CSM (Compatibility Support Module) ->
     * Launch CSM: **Enabled**
         * Boot Device Control: **UEFI and Legacy OPROM**

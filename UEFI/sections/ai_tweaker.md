@@ -9,8 +9,8 @@
 * Target CPU Graphics Frequency: *1250MHz*
 * Ai Overclock Tuner: **Auto**
 * ASUS MultiCore Enhancement: **Auto**
-* CPU Core Ratio: **Auto**
-    * 1-Core Ratio Limit: *Auto*
+* CPU Core Ratio: **Sync All Cores**
+    * 1-Core Ratio Limit: **Auto**
     * 2-Core Ratio Limit: *Auto*
     * 3-Core Ratio Limit: *Auto*
     * 4-Core Ratio Limit: *Auto*
@@ -18,7 +18,7 @@
 * Max. CPU Cache Ratio: **Auto**
 * Internal PLL Overvoltage: **Auto**
 * BCLK Frequency : DRAM Frequency Ratio: **Auto**
-* DRAM Frequency: **Auto**
+* DRAM Frequency: **DDR3-1600MHz**
 * Max. CPU Graphics Ratio: **Auto**
 * OC Tuner: **Keep Current Settings**
 * EPU Power Saving Mode: **Disabled**

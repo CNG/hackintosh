@@ -2,4 +2,4 @@
 
 ## Tool
 
-* Setup Animator: **Enabled**
+* Setup Animator: **Disabled**

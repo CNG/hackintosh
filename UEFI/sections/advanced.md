@@ -29,11 +29,11 @@
     * Active Processor Cores: **All**
     * Limit CPUID Maximum: **Disabled**
     * Execute Disable Bit: **Enabled**
-    * Intel Virtualization Technology: **Disabled**
+    * Intel Virtualization Technology: **Enabled**
     * Hardware Prefetcher(L2 Cache): **Enabled**
     * Adjacent Cache Line Prefetcher: **Enabled**
     * Boot performance mode: **Max Non-Turbo Performance**
-    * Dynamic Storage Accelerator: **Disabled**
+    * Dynamic Storage Accelerator: **Enabled**
     * CPU Power Management Configuration ->
         * Enhanced Intel SpeedStep Technology: **Enabled**
         * Turbo Mode: **Enabled**
@@ -72,7 +72,7 @@
         * Hot Plug: **Disabled**
 * System Agent Configuration ->
     * System Agent Bridge Name: *Haswell*
-    * VT-d: **Disabled**
+    * VT-d: **Enabled**
     * CPU Display Audio: **Enabled**
     * DVI Port Audio: **Off**
     * Graphics Configuration ->
@@ -80,7 +80,7 @@
         * Primary Display: **Auto**
         * DVMT Pre-Allocated For Haswell: **Auto**
         * Render Standby: **Auto**
-        * CPU Graphics Multi-Monitor: **Disabled**
+        * CPU Graphics Multi-Monitor: **Enabled**
     * DMI Configuration ->
         * DMI Gen 2: **Enabled**
     * NB PCI-E Configuration ->
@@ -127,23 +127,23 @@
     * Wake From Thunderbolt Devices: **On**
     * AIC Support: **On**
     * AIC Location: **4**
-    * Thunderbolt PCI-E Cache-line Size: **32**
+    * Thunderbolt PCI-E Cache-line Size: **128**
     * SMI/Notify Support: **On**
     * SwSMI Support: **On**
     * Notify Support: **On**
     * Ignore Thunderbolt Option Rom: **On**
     * Thunderbolt SwSMI Delay: **0**
     * TBT Device IO resource Support: **Off**
-    * Reserved Mem per Device: **32**
-    * Reserved PMem per Device: **32**
+    * Reserved Mem per Device: **128**
+    * Reserved PMem per Device: **128**
 * Onboard Devices Configuration ->
     * HD Audio Controller: **Enabled**
         * Front Panel Type: **HD Audio**
         * SPDIF Out Type: **SPDIF**
     * USB 3.1 & PCIEx16_3: **USB 3.1**
-    * PCI Express Slot and M.2 Bandwidth: **PCIeX1 1 and 2 slot at X1 Mode**
+    * PCI Express Slot and M.2 Bandwidth: **M.2 Mode**
     * Asmedia USB 3.1 Controller: **Enabled**
-        * Asmedia USB 3.1 Battery Charging Support: **Disabled**
+        * Asmedia USB 3.1 Battery Charging Support: **Enabled**
     * Intel LAN Controller: **Enabled**
         * Intel LAN PCE Option ROM: **Disabled**
     * Serial Port Configuration ->

@@ -19,3 +19,12 @@ Set up USB 2.0 and USB 3.0 ports
 * Disabled: XHC1->XHC rename in [`config.plist`](CLOVER/config.plist)
 
 Note the USB 3.1 ports are separate and apparently worked natively in 10.12, but an addon card (dodocool DC26 SuperSpeed USB 3.1 PCI-E, ASM1142 chipset) did not automatically work despite a review stating it worked on a Mac Pro.
+
+# Intel HD graphics
+
+I primarily use a discreet graphics card, but wanted to take advantage of any chipset or processor features for media encoding, etc. I do not believe I have it set up properly yet based on the Messages app crashing when dealing with videos and on [VDADecoderCheck](https://github.com/cylonbrain/VDADecoderCheck/releases) failing. Maybe it is a problem with macOS Sierra.
+
+* Copy to `CLOVER/kexts/Other`:
+    * `FakePCIID_Intel_HD_Graphics.kext` from [RehabMan-FakePCIID-2017-0109.zip](https://bitbucket.org/RehabMan/os-x-fake-pci-id/downloads/RehabMan-FakePCIID-2017-0109.zip) ([source code](https://github.com/RehabMan/OS-X-Fake-PCI-ID))
+        * > `8086:0412` is the native device-id for HD4600 desktop. By injecting `0412`, `AppleIntelFramebufferAzul` and `AppleIntelHD5000Graphics` will load. And since, FakePCIID will also be attached to these devices, it will successfully fool both kexts that the device an Intel HD4600 Desktop IGPU (0412).
+

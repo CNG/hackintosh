@@ -28,3 +28,10 @@ I primarily use a discreet graphics card, but wanted to take advantage of any ch
     * `FakePCIID_Intel_HD_Graphics.kext` from [RehabMan-FakePCIID-2017-0109.zip](https://bitbucket.org/RehabMan/os-x-fake-pci-id/downloads/RehabMan-FakePCIID-2017-0109.zip) ([source code](https://github.com/RehabMan/OS-X-Fake-PCI-ID))
         * > `8086:0412` is the native device-id for HD4600 desktop. By injecting `0412`, `AppleIntelFramebufferAzul` and `AppleIntelHD5000Graphics` will load. And since, FakePCIID will also be attached to these devices, it will successfully fool both kexts that the device an Intel HD4600 Desktop IGPU (0412).
 
+# Intel network
+
+* Copy to `CLOVER/kexts/Other`:
+    * `IntelMausiEthernet.kext` from [RehabMan-IntelMausiEthernet-v2-2017-0321.zip](https://bitbucket.org/RehabMan/os-x-intel-network/downloads/RehabMan-IntelMausiEthernet-v2-2017-0321.zip) ([source code](https://github.com/RehabMan/OS-X-Intel-Network))
+        * System information utility shows "Intel I218V2 PCI Express Gigabit Ethernet". [ASUS specifications](https://www.asus.com/us/Motherboards/Z97AUSB_31/specifications/) show "Intel® I218V, 1 x Gigabit LAN, Dual interconnect between the Integrated Media Access Controller (MAC) and Physical Layer (PHY)
+Gigabit Intel® LAN Connection- 802.3az Energy Efficient Ethernet (EEE) appliance".
+

@@ -52,19 +52,6 @@ Copy to `CLOVER/kexts/Other`:
 ### USB
 
 The USB 3.1 ports are separate from USB 2.0 and USB 3.0 and work natively in 10.12.
-My addon card ([dodocool DC26 SuperSpeed USB 3.1 PCI-E](http://amzn.to/2olbnre), ASM1142 chipset) may not work natively despite a reviewer claiming success on a Mac Pro,.
-This might be because I have not yet connected the card to an additional (SATA) power supply.
-The [DC22 product page](http://www.dodocool.com/usb-adapters-1772/p-dc22.html) states the extra power is only required to enable higher charging current on both ports:
-
-> **PCIe or SATA 15-pin power connector for power supply**
->
-> Supply power directly from PCIe bus or from 15-pin SATA power connector. When using the 15-pin SATA power connector, it supports up to 5V 2A bus power on each USB 3.1 port.
-
-The [DC26 product page](http://www.dodocool.com/accessories-1931/p-dc26.html) does not specifically say the SATA power is optional or required:
-
-> **Excellent Performance**
->
-> The 15-pin SATA power connector supplies power to USB-C enabled devices, and supports up to 5V 900mAh output on each USB 3.1 port.
 
 **Configure USB 2.0 and USB 3.0 ports**
 
@@ -77,10 +64,26 @@ The [DC26 product page](http://www.dodocool.com/accessories-1931/p-dc26.html) do
 * [Custom SSDT for `USBInjectAll.kext`](https://www.tonymacx86.com/threads/guide-creating-a-custom-ssdt-for-usbinjectall-kext.211311/)
     * Compile [`SSDT-UIAC.dsl`](ACPI_patches/SSDT-UIAC.dsl) with MaciASL from [RehabMan-MaciASL-2017-0117.zip](https://bitbucket.org/RehabMan/os-x-maciasl-patchmatic/downloads/RehabMan-MaciASL-2017-0117.zip)
     * Save result [`SSDT-UIAC.aml`](CLOVER/ACPI/patched/SSDT-UIAC.aml) to `CLOVER/ACPI/patched`.
-* EHC1->EH01 rename in [`config.plist`](CLOVER/config.plist)
-* **Disabled:** EHC2->EH02 rename in [`config.plist`](CLOVER/config.plist)
-* **Disabled:** XHCI->XHC rename in [`config.plist`](CLOVER/config.plist)
-* **Disabled:** XHC1->XHC rename in [`config.plist`](CLOVER/config.plist)
+
+**USB 3.1 PCI-E card**
+
+My addon card ([dodocool DC26 SuperSpeed USB 3.1 PCI-E](http://amzn.to/2olbnre), ASM1142 chipset) initially did not work.
+I thought it might be because I had not yet connected the card to an additional (SATA) power supply.
+The [DC22 product page](http://www.dodocool.com/usb-adapters-1772/p-dc22.html) states the extra power is only required to enable higher charging current on both ports:
+
+> **PCIe or SATA 15-pin power connector for power supply**
+>
+> Supply power directly from PCIe bus or from 15-pin SATA power connector. When using the 15-pin SATA power connector, it supports up to 5V 2A bus power on each USB 3.1 port.
+
+The [DC26 product page](http://www.dodocool.com/accessories-1931/p-dc26.html) does not specifically say the SATA power is optional or required:
+
+> **Excellent Performance**
+>
+> The 15-pin SATA power connector supplies power to USB-C enabled devices, and supports up to 5V 900mAh output on each USB 3.1 port.
+
+The ports worked once I removed the EHC1->EH01 patch I had previously determined I needed.
+I found the DC26 does indeed require the SATA power connector, though.
+The statement "up to 5V 900mAh output" seems to be wrong: my Nexus 6P reported 1720 mA charging current.
 
 
 ### Intel HD graphics

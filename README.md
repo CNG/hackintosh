@@ -108,3 +108,8 @@ Copy to `CLOVER/kexts/Other`:
 
     System information utility shows "Intel I218V2 PCI Express Gigabit Ethernet".
     [ASUS specifications](https://www.asus.com/us/Motherboards/Z97AUSB_31/specifications/) show "Intel® I218V, 1 x Gigabit LAN, Dual interconnect between the Integrated Media Access Controller (MAC) and Physical Layer (PHY) Gigabit Intel® LAN Connection- 802.3az Energy Efficient Ethernet (EEE) appliance".
+
+
+### Other
+
+I forgot what [`SSDT-SB-OC.aml`](CLOVER/ACPI/patched/SSDT-SB-OC.aml) is or where it came from.
